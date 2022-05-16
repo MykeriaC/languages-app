@@ -24,6 +24,7 @@ function AllTabs({navigation}) {
         name="Home" 
         component={HomeScreen}
         options={{
+          // tabBarVisible: false,
           tabBarIcon: () => <MaterialCommunityIcons name="home" size={25} />
         }}
       />
@@ -55,7 +56,8 @@ function AllTabs({navigation}) {
               title="Chat"
             />
           ),
-          tabBarIcon: () => <MaterialCommunityIcons name="translate" size={25} />
+          tabBarIcon: () => <MaterialCommunityIcons name="translate" size={25} />,
+          // tabBarVisible: false,
         }}
       />
       <Tab.Screen 
