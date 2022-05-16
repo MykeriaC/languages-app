@@ -1,19 +1,19 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-function OtherScreen() {
+function TranslateScreen() {
     return (
       <View style={styles.container}>
-        <Text>Other!</Text>
+        <Text>Translate!</Text>
       </View>
     );
 }
 
-export default OtherScreen;
+export default TranslateScreen;
 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#3D83C6',
       alignItems: 'center',
       justifyContent: 'center',
     },

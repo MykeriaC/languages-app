@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './tabs/home';
 import ActivityScreen from './tabs/activity';
-import OtherScreen from './tabs/other';
+import TranslateScreen from './tabs/translate';
 import ChatScreen from './tabs/chat';
 import ProfileScreen from './tabs/profile';
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
@@ -22,7 +22,7 @@ function AllTabs({navigation}) {
         name="Home" 
         component={HomeScreen}
         options={{
-          tabBarIcon: () => <MaterialCommunityIcons name="home" size={20} />
+          tabBarIcon: () => <MaterialCommunityIcons name="home" size={25} />
         }}
       />
       <Tab.Screen 
@@ -31,27 +31,29 @@ function AllTabs({navigation}) {
         
         options={{
           headerRight: () => (
-            <Button
+            <MaterialCommunityIcons style={{padding: "3%"}}
+              name="message-text"
+              size={25}
               onPress={() => {navigation.navigate('Chat')}}
               title="Chat"
-              color= "blue"
             />
           ),
-          tabBarIcon: () => <Ionicons name="planet" size={20} />
+          tabBarIcon: () => <Ionicons name="planet" size={25} />
         }}
       />
       <Tab.Screen 
         name="Translate" 
-        component={OtherScreen}
+        component={TranslateScreen}
         options={{
           headerRight: () => (
-            <Button
+            <MaterialCommunityIcons style={{padding: "3%"}}
+              name="message-text"
+              size={25}
               onPress={() => {navigation.navigate('Chat')}}
               title="Chat"
-              color= "blue"
             />
           ),
-          tabBarIcon: () => <MaterialCommunityIcons name="translate" size={20} />
+          tabBarIcon: () => <MaterialCommunityIcons name="translate" size={25} />
         }}
       />
       <Tab.Screen 
@@ -59,13 +61,14 @@ function AllTabs({navigation}) {
         component={ProfileScreen}
         options={{
           headerRight: () => (
-            <Button
+            <MaterialCommunityIcons style={{padding: "3%"}}
+              name="message-text"
+              size={25}
               onPress={() => {navigation.navigate('Chat')}}
               title="Chat"
-              color= "blue"
             />
           ),
-          tabBarIcon: () => <MaterialCommunityIcons name="account" size={20} />
+          tabBarIcon: () => <MaterialCommunityIcons name="account" size={25} />
         }}
       />
     </Tab.Navigator>

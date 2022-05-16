@@ -13,7 +13,7 @@ export default ActivityScreen;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#3D83C6',
       alignItems: 'center',
       justifyContent: 'center',
     },
