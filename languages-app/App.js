@@ -9,6 +9,8 @@ import ActivityScreen from './tabs/activity';
 import OtherScreen from './tabs/other';
 import ChatScreen from './tabs/chat';
 import ProfileScreen from './tabs/profile';
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -16,10 +18,17 @@ const Stack = createNativeStackNavigator();
 function AllTabs({navigation}) {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen 
-        name="Activity" 
+        name="Home" 
+        component={HomeScreen}
+        options={{
+          tabBarIcon: () => <MaterialCommunityIcons name="home" size={20} />
+        }}
+      />
+      <Tab.Screen 
+        name="Activities" 
         component={ActivityScreen}
+        
         options={{
           headerRight: () => (
             <Button
@@ -28,10 +37,11 @@ function AllTabs({navigation}) {
               color= "blue"
             />
           ),
+          tabBarIcon: () => <Ionicons name="planet" size={20} />
         }}
       />
       <Tab.Screen 
-        name="Other" 
+        name="Translate" 
         component={OtherScreen}
         options={{
           headerRight: () => (
@@ -41,6 +51,7 @@ function AllTabs({navigation}) {
               color= "blue"
             />
           ),
+          tabBarIcon: () => <MaterialCommunityIcons name="translate" size={20} />
         }}
       />
       <Tab.Screen 
@@ -54,6 +65,7 @@ function AllTabs({navigation}) {
               color= "blue"
             />
           ),
+          tabBarIcon: () => <MaterialCommunityIcons name="account" size={20} />
         }}
       />
     </Tab.Navigator>
