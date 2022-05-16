@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import styles from '../style.js';
 
 function ActivityScreen() {
     return (
@@ -9,12 +10,3 @@ function ActivityScreen() {
 }
 
 export default ActivityScreen;
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#3D83C6',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-});

@@ -1,16 +1,10 @@
-const base = StyleSheet.create({
-    container: {
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
+import { StyleSheet } from 'react-native';
 
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#3D83C6',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

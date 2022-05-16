@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import styles from '../style.js';
 
 function TranslateScreen() {
     return (
@@ -9,12 +10,3 @@ function TranslateScreen() {
 }
 
 export default TranslateScreen;
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#3D83C6',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-});
