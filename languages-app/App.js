@@ -20,19 +20,14 @@ const Stack = createNativeStackNavigator();
 function AllTabs({navigation}) {
   return (
     <Tab.Navigator>
-      <Tab.Screen 
-        name="Home" 
-        component={HomeScreen}
-        options={{
-          // tabBarVisible: false,
+      <Tab.Screen name="Home" component={HomeScreen} options={{
+          tabBarStyle: { display: "none" },
+          headerShown: false,
           tabBarIcon: () => <MaterialCommunityIcons name="home" size={25} />
         }}
       />
       <Tab.Screen 
-        name="Activities" 
-        component={ActivityScreen}
-        
-        options={{
+        name="Activities" component={ActivityScreen} options={{
           headerRight: () => (
             <MaterialCommunityIcons style={{padding: "3%"}}
               name="message-text"
@@ -45,9 +40,7 @@ function AllTabs({navigation}) {
         }}
       />
       <Tab.Screen 
-        name="Translate" 
-        component={TranslateScreen}
-        options={{
+        name="Translate" component={TranslateScreen} options={{
           headerRight: () => (
             <MaterialCommunityIcons style={{padding: "3%"}}
               name="message-text"
@@ -61,9 +54,7 @@ function AllTabs({navigation}) {
         }}
       />
       <Tab.Screen 
-        name="Profile" 
-        component={ProfileScreen}
-        options={{
+        name="Profile" component={ProfileScreen} options={{
           headerRight: () => (
             <MaterialCommunityIcons style={{padding: "3%"}}
               name="message-text"

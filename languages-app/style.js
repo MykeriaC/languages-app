@@ -9,7 +9,12 @@ export default StyleSheet.create({
     padding: 30
   },
   title: {
-    fontSize: 30,
+    fontSize: 35,
+    color: "white",
+    paddingBottom: 20
+  },
+  subtitle: {
+    fontSize: 18,
     color: "white",
     paddingBottom: 20
   },
