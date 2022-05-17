@@ -2,6 +2,8 @@ import { Text, View, TouchableOpacity, FlatList } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import { ListItem, Avatar } from 'react-native-elements';
 import styles from '../style.js';
+// import Chatbot from 'react-chatbot-kit';
+import { color } from 'react-native-elements/dist/helpers';
 
 function HomeScreen ( {navigation} ){
   // our Date object
@@ -136,9 +138,10 @@ switch(month){
           renderItem={renderItem}
           ItemSeparatorComponent={()=>(<View style={{paddingBottom: 20}}></View>)}
         />
+        {/* <Chatbot /> */}
     </View>
   );
 }
 
-
 export default HomeScreen;
+

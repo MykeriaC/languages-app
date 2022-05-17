@@ -21,5 +21,13 @@ export default StyleSheet.create({
   list: {
     borderRadius: 15,
     overflow: 'hidden'
+  },
+  chat: {
+    textAlign: 'center',
+    // backgroundColor: '#282c34',
+    // minHeight: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
