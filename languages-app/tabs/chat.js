@@ -7,7 +7,7 @@ import { GiftedChat } from 'react-native-gifted-chat';
 function ChatScreen() {
     return (
       <View>
-        <Text>Chat!</Text>
+        <Text>Chatttt!</Text>
       </View>
     );
 }

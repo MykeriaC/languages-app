@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { ListItem, Avatar } from 'react-native-elements';
 import styles from '../style.js';
 // import Chatbot from 'react-chatbot-kit';
-import { color } from 'react-native-elements/dist/helpers';
 
 function HomeScreen ( {navigation} ){
   // our Date object
