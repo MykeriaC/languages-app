@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { Text, View, Button } from 'react-native';
-import { Card } from 'react-native-elements';
+// import { StatusBar } from 'expo-status-bar';
+// import { Text, View, Button } from 'react-native';
+// import { Card } from 'react-native-elements';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -12,7 +12,8 @@ import ChatScreen from './tabs/chat';
 import ProfileScreen from './tabs/profile';
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import styles from './style.js';
+// import styles from './style.js';
+import { Avatar } from 'react-native-elements';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
