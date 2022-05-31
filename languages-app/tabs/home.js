@@ -1,10 +1,13 @@
-import { Text, View, TouchableOpacity, FlatList } from 'react-native';
+import { Text, View, TouchableOpacity, FlatList, SafeAreaView } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import { ListItem, Avatar } from 'react-native-elements';
 import styles from '../style.js';
-// import Chatbot from 'react-chatbot-kit';
+// import { useRoute } from '@react-navigation/native';
 
 function HomeScreen ( {navigation} ){
+
+  // const {first, last} = route.params;
+
   // our Date object
   var today = new Date();
   let nameOfDay, nameOfMonth;
@@ -38,47 +41,47 @@ function HomeScreen ( {navigation} ){
     case 6:
         nameOfDay = 'Saturday';
         break;
-}
+  }
 
-// switch statement to set the month value to an actual month
-switch(month){
-  case 1:
-    nameOfMonth = 'January';
-    break;
-  case 2:
-    nameOfMonth = 'February';
-    break;
-  case 3:
-    nameOfMonth = 'March';
-    break;
-  case 4:
-    nameOfMonth = 'April';
-    break;
-  case 5:
-    nameOfMonth = 'May';
-    break;
-  case 6:
-    nameOfMonth = 'June';
-    break;
-  case 7:
-    nameOfMonth = 'July';
-    break;
-  case 8:
-    nameOfMonth = 'August';
-    break;
-  case 9:
-    nameOfMonth = 'September';
-    break;
-  case 10:
-    nameOfMonth = 'October';
-    break;
-  case 11:
-    nameOfMonth = 'November';
-    break;
-  case 12:
-    nameOfMonth = 'December';
-    break;
-}
+  // switch statement to set the month value to an actual month
+  switch(month){
+    case 1:
+      nameOfMonth = 'January';
+      break;
+    case 2:
+      nameOfMonth = 'February';
+      break;
+    case 3:
+      nameOfMonth = 'March';
+      break;
+    case 4:
+      nameOfMonth = 'April';
+      break;
+    case 5:
+      nameOfMonth = 'May';
+      break;
+    case 6:
+      nameOfMonth = 'June';
+      break;
+    case 7:
+      nameOfMonth = 'July';
+      break;
+    case 8:
+      nameOfMonth = 'August';
+      break;
+    case 9:
+      nameOfMonth = 'September';
+      break;
+    case 10:
+      nameOfMonth = 'October';
+      break;
+    case 11:
+      nameOfMonth = 'November';
+      break;
+    case 12:
+      nameOfMonth = 'December';
+      break;
+  }
 
   const languages = [
     {
@@ -126,19 +129,18 @@ switch(month){
   )
 
   return (
-    <View style={styles.container}>
-        {/* pass in name here */}
-        <Text style={styles.title}>Welcome back, User</Text>
-        <Text style={styles.title}>{nameOfDay}</Text>
-        <Text style={styles.title}>{nameOfMonth} {date}</Text>
-        <Text style={styles.subtitle}>Select a Language to Get Started:</Text>
-        <FlatList
-          data={languages}
-          renderItem={renderItem}
-          ItemSeparatorComponent={()=>(<View style={{paddingBottom: 20}}></View>)}
-        />
-        {/* <Chatbot /> */}
-    </View>
+    <SafeAreaView style={styles.container}>
+      {/* pass in name here */}
+      <Text style={styles.title}>Welcome back, User</Text>
+      <Text style={styles.title}>{nameOfDay}</Text>
+      <Text style={styles.title}>{nameOfMonth} {date}</Text>
+      <Text style={styles.subtitle}>Select a Language to Get Started:</Text>
+      <FlatList
+        data={languages}
+        renderItem={renderItem}
+        ItemSeparatorComponent={()=>(<View style={{paddingBottom: 20}}></View>)}
+      />
+    </SafeAreaView>
   );
 }
 

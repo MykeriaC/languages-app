@@ -29,5 +29,19 @@ export default StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
+  input: {
+    backgroundColor: 'white',
+    borderRadius: 15,
+    borderWidth: 2,
+    height: 30,
+    margin: 10,
+    paddingLeft: 15,
+    borderColor: 'purple',
+    width: 300
+  },
+  activityIndicator: {
+    alignItems: 'center',
+    height: 80,
+  },
 });
