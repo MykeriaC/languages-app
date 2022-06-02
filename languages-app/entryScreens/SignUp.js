@@ -57,7 +57,7 @@ const SignUp = ({navigation}) => {
             <Text>{confirmPass}</Text>
             <TouchableOpacity>
                 <View style={{backgroundColor: "purple", padding: 12, marginTop: 20, alignItems: 'center', borderRadius: 30, width: 100}}>
-                    <Text style={{color: "white", fontWeight: 'bold'}} onPress={() => {navigation.push('HomeScreen'), console.log("was pressed (signup)");}}>SIGN UP</Text>
+                    <Text style={{color: "white", fontWeight: 'bold'}} onPress={() => {navigation.navigate('HomeScreen'), console.log("was pressed (signup)")}}>SIGN UP</Text>
                 </View>
             </TouchableOpacity>
             <Text>Already have an account? <Text onPress={() => {navigation.navigate('LoginScreen')}} style={{fontWeight: 'bold', color: "purple"}}>Log In!</Text></Text>

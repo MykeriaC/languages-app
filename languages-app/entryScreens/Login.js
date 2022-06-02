@@ -32,7 +32,7 @@ const Login = ({navigation}) => {
             <TouchableOpacity>
                 <View style={{backgroundColor: "purple", padding: 12, margin: 10, alignItems: 'center', borderRadius: 30, width: 100}}>
                     {/* <Text>{email}</Text> */}
-                    <Text style={{color: "white", fontWeight: 'bold'}} onPress={() => {navigation.push('HomeScreen', {nameOf: "Lucy"}), console.log("was pressed (login)");}}>LOG IN</Text>
+                    <Text style={{color: "white", fontWeight: 'bold'}} onPress={() => {navigation.navigate('HomeScreen'), console.log("was pressed (login)")}}>LOG IN</Text>
                 </View>
             </TouchableOpacity>
             {/* <Button style={{paddingTop: 20, borderRadius: 15, overflow: 'hidden'}} title="Log In" buttonStyle={{ backgroundColor: 'black'}} onPress={() => {navigation.navigate('HomeScreen')}}></Button> */}

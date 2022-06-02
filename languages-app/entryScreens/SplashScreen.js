@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {
   ActivityIndicator,
   View,
-  Image
+  Image,
+  Text
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from '../style.js';
@@ -34,6 +35,7 @@ const SplashScreen = ({navigation}) => {
           source={img}
           style={{width: '90%', resizeMode: 'contain', margin: 30}}
         />
+        <Text style={{fontSize: 50}}>NAME</Text>
         <ActivityIndicator
           animating={animating}
           color="#FFFFFF"

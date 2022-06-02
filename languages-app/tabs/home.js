@@ -112,7 +112,8 @@ function HomeScreen ( {navigation} ){
       onPress = {() => {navigation.navigate('Activities', {
         id: item.id,
         language: item.language
-      });}}
+      });
+      }}
     >
       <ListItem>
         <Avatar
